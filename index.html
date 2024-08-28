@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>My GitHub Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autonomous Driving Demos</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <h1>Welcome to My Homepage</h1>
-    <p>This is my first Technical Demos!</p>
+    <header>
+        <h1>Autonomous Driving Technology Demos</h1>
+    </header>
+
+    <section class="video-gallery">
+        <div class="video-container">
+            <video controls>
+                <source src="videos/demo1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Demo Video 1</h2>
+        </div>
+
+        <div class="video-container">
+            <video controls>
+                <source src="videos/demo2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2>Demo Video 2</h2>
+        </div>
+        <!-- 더 많은 비디오를 추가하려면 이곳에 새로운 video-container를 추가 -->
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Autonomous Tech Demos</p>
+    </footer>
 </body>
 
 </html>
