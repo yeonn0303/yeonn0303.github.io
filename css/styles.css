@@ -8,7 +8,6 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* 수직 중앙 정렬 */
     min-height: 100vh;
 }
 
@@ -24,46 +23,79 @@ h1 {
     margin: 0;
 }
 
-.video-gallery {
-    display: flex;
-    flex-direction: column;
-    /* 비디오들을 수직으로 배치 */
-    align-items: center;
-    /* 수평 중앙 정렬 */
-    padding: 20px;
-    gap: 30px;
-    /* 비디오와 제목 간격 조정 */
-}
-
-.video-container {
+.section-title {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8em;
     text-align: center;
 }
 
-video {
-    width: 600px;
+.video-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 100px;
+    /* 영상 간의 간격을 넓게 설정 */
+}
+
+.horizontal-video-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    align-items: stretch;
+    /* 두 비디오의 높이를 동일하게 맞춤 */
+}
+
+.group-title {
+    text-align: left;
+    margin-bottom: 5px;
+    /* 그룹 제목과 비디오 사이 간격 최소화 */
+    font-weight: bold;
+}
+
+.video-container {
+    text-align: left;
+    flex: 1;
+    /* 컨테이너를 동일한 비율로 확장 */
+    display: flex;
+    flex-direction: column;
+}
+
+video,
+iframe {
+    width: 100%;
+    /* 컨테이너에 맞춰 너비를 자동 조정 */
     height: auto;
+    /* 높이를 비율에 따라 조정 */
     border: 2px solid #333;
+    max-width: 600px;
+    /* 최대 너비 600px로 제한 */
+    flex-grow: 1;
+    /* 높이를 동일하게 맞추기 위해 비디오의 높이를 확장 */
 }
 
 h2 {
-    margin: 5px 0;
-    /* 제목과 비디오 사이 간격 조정 */
+    margin-bottom: 5px;
+    /* 제목과 비디오 간의 간격을 최소화 */
+    margin-top: 0;
+    /* 제목과 위 요소 간 간격 제거 */
+    font-weight: bold;
+    font-style: italic;
 }
 
 .video-link {
     font-size: 0.8em;
-    /* 문구 크기 조정 */
     color: black;
-    /* 글씨 색상 설정 */
-    margin-top: 5px;
-    /* 제목과 링크 사이 간격 조정 */
+    margin-top: 10px;
+    /* 제목과 비디오 간 간격 최소화 */
 }
 
 .video-link a {
     color: black;
-    /* 링크 색상 설정 */
     text-decoration: underline;
-    /* 링크에 밑줄 추가 */
 }
 
 footer {
@@ -72,6 +104,5 @@ footer {
     text-align: center;
     padding: 10px 0;
     margin-top: auto;
-    /* 푸터를 페이지 하단으로 이동 */
     width: 100%;
 }
