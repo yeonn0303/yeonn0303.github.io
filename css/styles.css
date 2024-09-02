@@ -64,18 +64,6 @@ h1 {
     flex-direction: column;
 }
 
-video,
-iframe {
-    width: 100%;
-    /* 컨테이너에 맞춰 너비를 자동 조정 */
-    height: auto;
-    /* 높이를 비율에 따라 조정 */
-    border: 2px solid #333;
-    max-width: 600px;
-    /* 최대 너비 600px로 제한 */
-    flex-grow: 1;
-    /* 높이를 동일하게 맞추기 위해 비디오의 높이를 확장 */
-}
 
 h2 {
     margin-bottom: 5px;
